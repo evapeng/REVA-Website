@@ -1,0 +1,338 @@
+html {
+  /* change the fonts for the whole page to Karla, a google webfont. See the head of index.html to see how the font is loaded */
+  font-family: "Karla", sans-serif;
+  /* Set the color of the text to a custom color using a hex code */
+  color: #3a3a3a;
+
+
+}
+
+.elem-box {
+  position: absolute;
+  margin-left: 15px;
+}
+
+.button-top {
+  position: absolute;
+  min-width: 50px;
+  width: 10%;
+  text-align: center;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+
+.imageContainer-vert {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: -90px;
+  left: -200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: scale(.8,.8);
+
+}
+
+.imageContainer-vert-2 {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: -90px;
+  left: -100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: scale(.5,.5);
+
+}
+
+
+.imageContainer-hor {
+  position: absolute;
+  top: 150px;
+  left: -400px;
+  margin-top:0px;
+  margin-left:20px;
+}
+
+
+.button-bottom {
+  position: fixed;
+  bottom: 31px;
+  right: 0px;
+  width: 110px;
+  height: 30px;
+  text-align: center;
+}
+
+.button-bottom-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 17px;
+  width: 93px;
+  height: 31px;
+  text-align: right;
+  border-radius: 6px;
+  border: 1px solid black;  
+}
+
+.button-bottom-2 {
+  position: fixed;
+  bottom: 76px;
+  right: 3px;
+  width: 90px;
+  height: 30px;
+}
+
+.button-bottom-2-wrapper {
+  position: fixed;
+  bottom: 65px;
+  right: 15px;
+  width: 78px;
+  height: 31px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid black;  
+}
+.background {
+
+  /* Position the background fixed to all four sides of the screen */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  /* Make sure that the background is behind the content */
+  z-index: -1;
+
+  /* make the background image an image, and make it cover the size of the screen */
+  background-image: url("../../assets/img/concrete.jpg");
+  background-size: cover;
+}
+
+
+.page-header {
+
+  /* Make the content take up half of the screen horizontally, but not larger than 500px */
+  width: 50%;
+  height: 20%;
+  /*height: 250px;
+  max-height: 250px;*/
+
+  /* put a margin to the top and bottom of 100px, and center the content vertically */
+  margin: 110px auto;
+
+  /* put a border around the text content */
+  padding: 45px;
+
+  /* Make the content's background white 
+  background-color: white;
+  background-image: url("../../assets/img/well.png");
+  background-size: 880px 400px;
+  background-repeat: no-repeat;
+  opacity: 1; */
+
+  /* background-image: url("../../assets/img/gold.jpg");
+     background-size: cover;*/
+
+  /* center align all of the text */
+  /* color: #FFFFFF; */
+  text-align: center;
+
+  /* make the corners rounded */
+  border-radius: 6px;
+
+  /* add a drop shadow */
+  /*box-shadow: 0px 5px 30px 0px rgba(365,365,365,0.45);*/
+}
+
+.image-vertical {
+  display: inline-block;
+  width: 90px;
+  height: 100%;
+
+}
+
+.image-horizontal {
+  display: inline-block;
+  height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    width:90px;
+    display:block;
+}
+
+.text-shading {
+    position: absolute;
+    background-color:rgba(255,255,255,0.8);
+    width: 85px;
+    height: 53px;
+    line-height:15px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.text-shading:hover {
+    opacity:1;
+}
+
+.txt {
+  position: relative;
+  font-size: 90%;
+  top: 10px;
+}
+
+.z-value{
+  position: absolute;
+  z-index: 10000;
+}
+
+.bottom-container{
+
+  width: 100%;
+  text-decoration: none;
+   width: 100%;
+   margin: 55px 55px;
+}
+
+h1 {
+  /* Make the title all caps */
+  text-transform: uppercase;
+  /* Space out the letters to make them look prettier */
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin: 5px;
+
+}
+
+h4 {
+
+  letter-spacing: 0.3em;
+  font-size: 180%;
+  margin-top: 40px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p {
+
+}
+div {}
+
+.video-overlay{
+    position: absolute;
+    width:304px;
+    height:523px;
+    background:#000;
+    opacity:0.0;
+    /*background:rgba(255,255,255,0.8); or just this*/
+    z-index:500000;
+    color:#fff;
+    
+}
+
+.container-box {
+  margin:auto;
+  width: 90%;
+  max-width: 950px;
+
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or space-around */
+
+
+} 
+
+.video {
+  width:304px;
+  height:523px;
+  box-shadow: 0px 5px 40px 5px rgba(255,255,255,.65);
+}
+
+a {
+position: relative;
+}
+
+.video{
+  display: inline-block;
+  margin-bottom: 8px;
+  z-index:100000;
+  text-decoration: none;
+}
+
+.hover { 
+  width: 5%;
+  min-width: 50px;
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+}
+
+
+a.links{
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  font-size: 190%;
+  width: 155px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px;
+
+}
+
+@media screen and (min-width: 36em) {
+  a {
+    width: calc(40% + 1px);
+  }
+}
+
+@media screen and (min-width: 62em) {
+  a {
+    width: calc(33% + 2px);
+  }
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.nav {
+    display: inline;
+}
